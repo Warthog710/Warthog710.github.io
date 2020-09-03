@@ -13,7 +13,7 @@
 
     <title>Personal Website</title>
   </head>
-  <body onload="test()">
+  <body onload="getAge()">
 
     <!-- ============================== Start Header ============================== -->
     <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
@@ -52,10 +52,17 @@
 
       <div class="jumbotron container">
         <div class="row">
-          <div class="col-lg-4 text-center"><h1>About Me</h1><p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at congue enim. Phasellus enim nunc, vestibulum et magna eu, consectetur varius nisl. Pellentesque eu blandit lorem. Nunc blandit magna non massa egestas, cursus tincidunt ex malesuada. Nullam quis leo dolor. Ut venenatis neque quis dui mollis, sit amet suscipit nulla ornare. Etiam vestibulum ex ut consequat luctus. </p></div>
+          <div class="col-lg-4 text-center">
+            <h2>About Me</h2>
+            <p class="text-center">I am a Computer Science student at Sacramento State University pursuing my bachelor's degree. I am eager to learn and develop my skills in programming and technology and look forward to new and challenging experiences. I am a quick learner that is diligient and personable.</p>
+          </div>
           <div class="center col-lg-4"><img src="images/mugshot.jpg" class="rounded-circle img-fluid center"> </div>
-          <div class="col-lg-4 text-center"><h1>Details</h1><p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at congue enim. Phasellus enim nunc, vestibulum et magna eu, consectetur varius nisl. Pellentesque eu blandit lorem. Nunc blandit magna non massa egestas, cursus tincidunt ex malesuada. Nullam quis leo dolor. Ut venenatis neque quis dui mollis, sit amet suscipit nulla ornare. Etiam vestibulum ex ut consequat luctus. </p></div>
-
+          <div class="col-lg-4 text-center">
+            <h2>Details</h2>
+            <h5 class="text-left"><strong>Name:</strong><br>Quinn Roemer</h5><br>
+            <h5 class="text-left"><strong>Age:</strong><br><div id="age"></div></h5><br>
+            <h5 class="text-left"><strong>Location:</strong><br><img class="icon" src="icons/geo-alt.svg"><a href="https://www.google.com/maps/place/Sacramento,+CA" target="_blank"> Sacramento, CA</a></h5>
+          </div>
         </div>
       </div>
 
@@ -69,30 +76,25 @@
 
       <div class="jumbotron container">
         <div class="row">
-          <div class="col-md-4"><h2>Folsom Lake College</h2><p>May 2016 - June 2019</p></div>
-          <div class="col-md-8"><h2>Description.</h2><p>
-
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at congue enim. Phasellus enim nunc, vestibulum et magna eu, consectetur varius nisl. Pellentesque eu blandit lorem. Nunc blandit magna non massa egestas, cursus tincidunt ex malesuada. Nullam quis leo dolor. Ut venenatis neque quis dui mollis, sit amet suscipit nulla ornare. Etiam vestibulum ex ut consequat luctus. </p></div>
+          <div class="col-md-4"><h4>Sacramento State University</h4><p>August 2019 - Present</p><p style="position: relative; bottom: 15px;">GPA: 3.95</p></div>
+          <div class="col-md-8"><h4>Description</h4><p>
+            Currently pursuing my bachelor's in Computer Science. I am on track to graduate after the Spring 2021 semester.</p>
+            <img class="icon" src="icons/map.svg">
+            <a href="https://www.csus.edu/" target="_blank">Sacramento State University</a>
+          </div>
         </div>
       </div>
 
       <div class="jumbotron container">
         <div class="row">
-          <div class="col-md-4"><h2>Folsom Lake College</h2><p>May 2016 - June 2019</p></div>
-          <div class="col-md-8"><h2>Description.</h2><p>
-
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at congue enim. Phasellus enim nunc, vestibulum et magna eu, consectetur varius nisl. Pellentesque eu blandit lorem. Nunc blandit magna non massa egestas, cursus tincidunt ex malesuada. Nullam quis leo dolor. Ut venenatis neque quis dui mollis, sit amet suscipit nulla ornare. Etiam vestibulum ex ut consequat luctus. </p></div>
+          <div class="col-md-4"><h4>Folsom Lake College</h4><p>May 2016 - June 2019</p><p style="position: relative; bottom: 15px;">GPA: 3.93</p></div>
+          <div class="col-md-8"><h4>Description</h4><p>
+            I graduated Folsom Lake College (FLC) in Spring 2019 with two associate degrees. One in Computer Science and the other in Math/Science.</p>
+            <img class="icon" src="icons/map.svg">
+            <a href="https://flc.losrios.edu/" target="_blank">Folsom Lake College</a>
+          </div>
         </div>
-      </div>
-
-      <div class="jumbotron container">
-        <div class="row">
-          <div class="col-md-4"><h2>Folsom Lake College</h2><p>May 2016 - June 2019</p></div>
-          <div class="col-md-8"><h2>Description.</h2><p>
-
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at congue enim. Phasellus enim nunc, vestibulum et magna eu, consectetur varius nisl. Pellentesque eu blandit lorem. Nunc blandit magna non massa egestas, cursus tincidunt ex malesuada. Nullam quis leo dolor. Ut venenatis neque quis dui mollis, sit amet suscipit nulla ornare. Etiam vestibulum ex ut consequat luctus. </p></div>
-        </div>
-      </div>   
+      </div> 
 
       <!-- ============================== End Education ============================== -->
 
@@ -105,18 +107,25 @@
 
       <div class="jumbotron container">
         <div class="row">
-          <div class="col-md-4"><h2>Some Job Title</h2><p>January 2010 - March 2016</p></div>
-          <div class="col-md-8">
-            <h2>Description.</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at congue enim. Phasellus enim nunc, vestibulum et magna eu, consectetur varius nisl. Pellentesque eu blandit lorem. Nunc blandit magna non massa egestas, cursus tincidunt ex malesuada. Nullam quis leo dolor. Ut venenatis neque quis dui mollis, sit amet suscipit nulla ornare. Etiam vestibulum ex ut consequat luctus.</p>
-            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-geo-alt" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" d="M12.166 8.94C12.696 7.867 13 6.862 13 6A5 5 0 0 0 3 6c0 .862.305 1.867.834 2.94.524 1.062 1.234 2.12 1.96 3.07A31.481 31.481 0 0 0 8 14.58l.208-.22a31.493 31.493 0 0 0 1.998-2.35c.726-.95 1.436-2.008 1.96-3.07zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
-              <path fill-rule="evenodd" d="M8 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-            </svg>
-            <a href="#">Google.com</a>
+          <div class="col-md-4"><h4>Sacramento Department of Utilities</h4><p>June 2019 - July 2020</p><p style="position: relative; bottom: 15px;">Student Intern</p></div>
+          <div class="col-md-8"><h4>Description</h4><p>
+            At this internship I was responsible for using, managing, and querying a financial database to produce reports at the directors' request. I actively used SQL and DAX inside of Microsoft Power BI to produce the reports.</p>
+            <img class="icon" src="icons/map.svg">
+            <a href="https://www.cityofsacramento.org/utilities" target="_blank">Sacramento DOU</a>
           </div>
         </div>
-      </div>  
+      </div>
+
+      <div class="jumbotron container">
+        <div class="row">
+          <div class="col-md-4"><h4>Folsom Lake College</h4><p>January 2019 - May 2019</p><p style="position: relative; bottom: 15px;">Tutor</p></div>
+          <div class="col-md-8"><h4>Description</h4><p>
+            Worked as a Computer Science and Math tutor at FLC. I was responsible for assisting other students in understanding essential topics in their programming courses. In addition, I assisted in tutoring Algebra/Calculus students.</p>
+            <img class="icon" src="icons/map.svg">
+            <a href="https://flc.losrios.edu/student-resources/tutoring" target="_blank">Folsom Lake Tutoring</a>
+          </div>
+        </div>
+      </div>
 
       <!-- ============================== End Experience ============================== -->
 
@@ -131,16 +140,70 @@
         <div class="row">
           <div class="col-sm-6">
             <ul class="list-group">
-              <li class="list-group-item d-flex justify-content-between align-items-center">C/C++<span id="stars">5</span></li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">C/C++<span>5</span></li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">C/C++<span>5</span></li>
+              <li id="listOne" class="list-group-item d-flex justify-content-between align-items-center" onmouseover='enlargeStars("starOne")' onmouseout='shrinkStars("starOne")'>C/C++
+                <span>
+                  <div id="starOne" class="listHighlight">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                </div>
+                </span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center" onmouseover='enlargeStars("starTwo")' onmouseout='shrinkStars("starTwo")'>Java
+                <span>
+                  <div id="starTwo" class="listHighlight">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-half.svg">
+                </div>
+                </span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center" onmouseover='enlargeStars("starThree")' onmouseout='shrinkStars("starThree")'>Python
+                <span>
+                  <div id="starThree" class="listHighlight">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star.svg">
+                    <img class="icon" src="icons/star.svg">
+                </div>
+                </span></li>
             </ul> 
           </div>
           <div class="col-sm-6">
             <ul class="list-group">
-              <li class="list-group-item d-flex justify-content-between align-items-center">C/C++<span>5</span></li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">C/C++<span>5</span></li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">C/C++<span>5</span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center" onmouseover='enlargeStars("starFour")' onmouseout='shrinkStars("starFour")'>SQL
+                <span>
+                  <div id="starFour" class="listHighlight">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star.svg">
+                    <img class="icon" src="icons/star.svg">
+                </div>
+                </span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center" onmouseover='enlargeStars("starFive")' onmouseout='shrinkStars("starFive")'>PHP
+                <span>
+                  <div id="starFive" class="listHighlight">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star.svg">
+                    <img class="icon" src="icons/star.svg">
+                </div>
+                </span></li>
+              <li class="list-group-item d-flex justify-content-between align-items-center" onmouseover='enlargeStars("starSix")' onmouseout='shrinkStars("starSix")'>Javascript
+                <span>
+                  <div id="starSix" class="listHighlight">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star.svg">
+                    <img class="icon" src="icons/star.svg">
+                  </div>
+                </span></li>
             </ul>          
           </div>
         </div>

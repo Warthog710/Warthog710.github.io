@@ -42,5 +42,7 @@
     transform: scale(1.05, 1.05);
   }
 
-  
+  .listHighlight {
+    transition: all 0.15s ease-in-out;
+  } 
   

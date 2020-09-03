@@ -1,6 +1,9 @@
-function test()
+function getAge()
 {
-    
+    birthday = new Date(1998, 7, 10);
+    var ageDifMs = Date.now() - birthday.getTime();
+    var ageDate = new Date(ageDifMs);
+    document.getElementById("age").innerHTML = Math.abs(ageDate.getUTCFullYear() - 1970);     
 }
 
 function addShadow(id)
@@ -11,4 +14,14 @@ function addShadow(id)
 function removeShadow(id)
 {
     document.getElementById(id).style.boxShadow = "";
+}
+
+function enlargeStars(id)
+{
+        document.getElementById(id).style = "transform: scale(1.2, 1.2)";
+}
+
+function shrinkStars(id)
+{
+        document.getElementById(id).style = "transform: scale(1.0, 1.0)"; 
 }
