@@ -1,48 +1,70 @@
 .jumbotron {
-    background:transparent;
-    padding-top:1px;
-    padding-bottom:1px;
-    
+  background: transparent;
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
 
 .onePadding {
-    padding-top:1px;
+  padding-top: 1px;
 }
 
 .center {
-    margin-left: auto;
-    margin-right: auto;
-    display:block
-  }
+  margin-left: auto;
+  margin-right: auto;
+  display: block
+}
 
-  .icon {
-      margin-bottom: 5px;
-  }
+.icon {
+  margin-bottom: 5px;
+}
 
-  .list-group-item {
-    border:none;
-  }
+.list-group-item {
+  border: none;
+}
 
-  .card {
-      border:none;
-  }
+.card {
+  border: none;
+}
 
-  .border {
-    z-index: 1;
-    border-radius: 5px;
-    border-width: thick;
-    background-color: #fff;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-    transition: all 0.2s ease-in-out;
-  }
+.border {
+  z-index: 1;
+  border-radius: 5px;
+  border-width: thick;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease-in-out;
+}
 
-  .border:hover {
-    position: relative;
-    z-index: 2;
-    transform: scale(1.05, 1.05);
-  }
+.border:hover {
+  position: relative;
+  z-index: 2;
+  transform: scale(1.05, 1.05);
+}
 
-  .listHighlight {
-    transition: all 0.15s ease-in-out;
-  } 
-  
+.listHighlight {
+  transition: all 0.15s ease-in-out;
+}
+
+.noDecoration, .noDecoration:hover, .noDecoration:visited, .noDecoration:link, .noDecoration:active, .noDecration:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+.backgroundOnHover {
+  transition: all 0.15s ease-in-out;
+}
+
+.backgroundOnHover:hover {
+  background-color: rgba(175, 175, 175, 0.753);
+  border-radius: 5px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .nav-link.active:hover, .nav-pills .nav-link.active:focus {
+  background-color: rgba(175, 175, 175, 0.753);
+}
+
+.logo {
+  border-radius: 50%;
+  border: 3px solid rgba(175, 175, 175, 0.753);
+  margin-right: 5px;
+}

@@ -1,303 +1,372 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/stylesheet.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <title>Personal Website</title>
-  </head>
-  <body onload="getAge()">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/stylesheet.css">
 
-    <!-- ============================== Start Header ============================== -->
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
-        <!-- Brand -->
-        <div class="container">
-          <a class="navbar-brand" href="#">Navbar</a>
-        
-          <!-- Toggler/collapsibe Button -->
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <!-- Navbar links -->
-          <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav> 
-      <!-- ============================== End Header ============================== -->
+  <title>Personal Website</title>
+</head>
 
-      <br>
-      <br>
-      <br>
+<body onload="getPgRdy()" data-spy="scroll" data-target=".navbar">
 
-      <!-- ============================== Start Profile ============================== -->
+  <!-- ============================== Start Header ============================== -->
 
-      <div class="jumbotron container">
-        <div class="row">
-          <div class="col-lg-4 text-center">
-            <h2>About Me</h2>
-            <p class="text-center">I am a Computer Science student at Sacramento State University pursuing my bachelor's degree. I am eager to learn and develop my skills in programming and technology and look forward to new and challenging experiences. I am a quick learner that is diligient and personable.</p>
-          </div>
-          <div class="center col-lg-4"><img src="images/mugshot.jpg" class="rounded-circle img-fluid center"> </div>
-          <div class="col-lg-4 text-center">
-            <h2>Details</h2>
-            <h5 class="text-left"><strong>Name:</strong><br>Quinn Roemer</h5><br>
-            <h5 class="text-left"><strong>Age:</strong><br><div id="age"></div></h5><br>
-            <h5 class="text-left"><strong>Location:</strong><br><img class="icon" src="icons/geo-alt.svg"><a href="https://www.google.com/maps/place/Sacramento,+CA" target="_blank"> Sacramento, CA</a></h5>
-          </div>
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+    <div class="container">
+      <a class="" href="#"><img src="images/mugshot.jpg" width="40" height="40" class="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav nav-pills">
+          <a class="nav-item nav-link" href="#education"> Education</a>
+          <a class="nav-item nav-link" href="#experience"> Experience</a>
+          <a class="nav-item nav-link" href="#skills"> Skills</a>
+          <a class="nav-item nav-link" href="#projects"> Projects</a>
+          <a class="nav-item nav-link" href="#contactMe"> Contact Me</a>
         </div>
       </div>
+    </div>
+  </nav>
 
-      <!-- ============================== End Profile ============================== -->
-      <hr class="container">
-      <h1 class="text-center">Education</h1>
-      <hr class="container">
-      <br>
+  <!-- ============================== End Header ============================== -->
 
-      <!-- ============================== Start Education ============================== -->
+  <br>
+  <br>
+  <br>
 
-      <div class="jumbotron container">
-        <div class="row">
-          <div class="col-md-4"><h4>Sacramento State University</h4><p>August 2019 - Present</p><p style="position: relative; bottom: 15px;">GPA: 3.95</p></div>
-          <div class="col-md-8"><h4>Description</h4><p>
-            Currently pursuing my bachelor's in Computer Science. I am on track to graduate after the Spring 2021 semester.</p>
-            <img class="icon" src="icons/map.svg">
-            <a href="https://www.csus.edu/" target="_blank">Sacramento State University</a>
+  <!-- ============================== Start Profile ============================== -->
+
+  <div class="jumbotron container">
+    <div class="row">
+      <div class="col-lg-4 text-center">
+        <h2>About Me</h2>
+        <p class="text-center">I am a Computer Science student at Sacramento State University pursuing my bachelor's
+          degree. I am eager to learn and develop my skills in programming and technology and look forward to new and
+          challenging experiences. I am a quick learner that is diligient and personable.</p>
+      </div>
+      <div class="center col-lg-4"><img src="images/mugshot.jpg" class="rounded-circle img-fluid center"> </div>
+      <div class="col-lg-4 text-center">
+        <h2>Details</h2>
+        <h5 class="text-left"><strong>Name:</strong><br>Quinn Roemer</h5><br>
+        <h5 class="text-left"><strong>Age:</strong><br>
+          <div id="age"></div>
+        </h5><br>
+        <h5 class="text-left"><strong>Location:</strong><br><img class="icon" src="icons/geo-alt.svg"><a
+            href="https://www.google.com/maps/place/Sacramento,+CA" target="_blank"> Sacramento, CA</a></h5>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================== End Profile ============================== -->
+  <hr class="container">
+  <h1 class="text-center" id="education">Education</h1>
+  <hr class="container">
+  <br>
+
+  <!-- ============================== Start Education ============================== -->
+
+  <div class="jumbotron container">
+    <div class="row">
+      <div class="col-md-4">
+        <h4>Sacramento State University</h4>
+        <p>August 2019 - Present</p>
+        <p style="position: relative; bottom: 15px;">GPA: 3.95</p>
+      </div>
+      <div class="col-md-8">
+        <h4>Description</h4>
+        <p>
+          Currently pursuing my bachelor's in Computer Science. I am on track to graduate after the Spring 2021
+          semester.</p>
+        <img class="icon" src="icons/box-arrow-up-right.svg">
+        <a href="https://www.csus.edu/" target="_blank">Sacramento State University</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="jumbotron container">
+    <div class="row">
+      <div class="col-md-4">
+        <h4>Folsom Lake College</h4>
+        <p>May 2016 - June 2019</p>
+        <p style="position: relative; bottom: 15px;">GPA: 3.93</p>
+      </div>
+      <div class="col-md-8">
+        <h4>Description</h4>
+        <p>
+          I graduated Folsom Lake College (FLC) in Spring 2019 with two associate degrees. One in Computer Science and
+          the other in Math/Science.</p>
+        <img class="icon" src="icons/box-arrow-up-right.svg">
+        <a href="https://flc.losrios.edu/" target="_blank">Folsom Lake College</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================== End Education ============================== -->
+
+  <hr class="container">
+  <h1 class="text-center" id="experience">Experience</h1>
+  <hr class="container">
+  <br>
+
+  <!-- ============================== Start Experience ============================== -->
+
+  <div class="jumbotron container">
+    <div class="row">
+      <div class="col-md-4">
+        <h4>Sacramento Department of Utilities</h4>
+        <p>June 2019 - July 2020</p>
+        <p style="position: relative; bottom: 15px;">Student Intern</p>
+      </div>
+      <div class="col-md-8">
+        <h4>Description</h4>
+        <p>
+          At this internship I was responsible for using, managing, and querying a financial database to produce reports
+          at the directors' request. I actively used SQL and DAX inside of Microsoft Power BI to produce the reports.
+        </p>
+        <img class="icon" src="icons/box-arrow-up-right.svg">
+        <a href="https://www.cityofsacramento.org/utilities" target="_blank">Sacramento DOU</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="jumbotron container">
+    <div class="row">
+      <div class="col-md-4">
+        <h4>Folsom Lake College</h4>
+        <p>January 2019 - May 2019</p>
+        <p style="position: relative; bottom: 15px;">Tutor</p>
+      </div>
+      <div class="col-md-8">
+        <h4>Description</h4>
+        <p>
+          Worked as a Computer Science and Math tutor at FLC. I was responsible for assisting other students in
+          understanding essential topics in their programming courses. In addition, I assisted in tutoring
+          Algebra/Calculus students.</p>
+        <img class="icon" src="icons/box-arrow-up-right.svg">
+        <a href="https://flc.losrios.edu/student-resources/tutoring" target="_blank">Folsom Lake Tutoring</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================== End Experience ============================== -->
+
+  <hr class="container">
+  <h1 class="text-center" id="skills">Skills</h1>
+  <hr class="container">
+  <br>
+
+  <!-- ============================== Start Skills ============================== -->
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <ul class="list-group">
+          <a data-toggle="tooltip" data-placement="right" title="Proficient">
+            <li class="list-group-item d-flex justify-content-between align-items-center backgroundOnHover"
+              onmouseover='enlargeStars("starOne")' onmouseout='shrinkStars("starOne")'>C/C++
+              <span>
+                <div id="starOne" class="listHighlight">
+                  <img class="icon" src="icons/star-fill.svg">
+                  <img class="icon" src="icons/star-fill.svg">
+                  <img class="icon" src="icons/star-fill.svg">
+                  <img class="icon" src="icons/star-fill.svg">
+                  <img class="icon" src="icons/star-fill.svg">
+                </div>
+              </span>
+            </li>
+          </a>
+          <a data-toggle="tooltip" data-placement="right" title="Proficient">
+            <li class="list-group-item d-flex justify-content-between align-items-center backgroundOnHover"
+              onmouseover='enlargeStars("starTwo")' onmouseout='shrinkStars("starTwo")'>Java
+              <span>
+                <div id="starTwo" class="listHighlight">
+                  <img class="icon" src="icons/star-fill.svg">
+                  <img class="icon" src="icons/star-fill.svg">
+                  <img class="icon" src="icons/star-fill.svg">
+                  <img class="icon" src="icons/star-fill.svg">
+                  <img class="icon" src="icons/star-half.svg">
+                </div>
+              </span>
+            </li>
+          </a>
+          <a data-toggle="tooltip" data-placement="right" title="Intermediate">
+            <li class="list-group-item d-flex justify-content-between align-items-center backgroundOnHover"
+              onmouseover='enlargeStars("starThree")' onmouseout='shrinkStars("starThree")'>Python
+              <span>
+                <div id="starThree" class="listHighlight">
+                  <img class="icon" src="icons/star-fill.svg">
+                  <img class="icon" src="icons/star-fill.svg">
+                  <img class="icon" src="icons/star-fill.svg">
+                  <img class="icon" src="icons/star.svg">
+                  <img class="icon" src="icons/star.svg">
+                </div>
+              </span>
+            </li>
+          </a>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <ul class="list-group">
+          <a data-toggle="tooltip" data-placement="right" title="Intermediate">
+            <li class="list-group-item d-flex justify-content-between align-items-center backgroundOnHover"
+              onmouseover='enlargeStars("starFour")' onmouseout='shrinkStars("starFour")'>SQL
+              <span>
+                <div id="starFour" class="listHighlight">
+                  <img class="icon" src="icons/star-fill.svg">
+                  <img class="icon" src="icons/star-fill.svg">
+                  <img class="icon" src="icons/star-fill.svg">
+                  <img class="icon" src="icons/star.svg">
+                  <img class="icon" src="icons/star.svg">
+                </div>
+              </span>
+            </li>
+          </a>
+          <a data-toggle="tooltip" data-placement="right" title="Intermediate">
+            <li class="list-group-item d-flex justify-content-between align-items-center backgroundOnHover"
+              onmouseover='enlargeStars("starFive")' onmouseout='shrinkStars("starFive")'>PHP
+              <span>
+                <div id="starFive" class="listHighlight">
+                  <img class="icon" src="icons/star-fill.svg">
+                  <img class="icon" src="icons/star-fill.svg">
+                  <img class="icon" src="icons/star-fill.svg">
+                  <img class="icon" src="icons/star.svg">
+                  <img class="icon" src="icons/star.svg">
+                </div>
+              </span>
+            </li>
+          </a>
+          <a data-toggle="tooltip" data-placement="right" title="Intermediate">
+            <li class="list-group-item d-flex justify-content-between align-items-center backgroundOnHover"
+              onmouseover='enlargeStars("starSix")' onmouseout='shrinkStars("starSix")'>JavaScript
+              <span>
+                <div id="starSix" class="listHighlight">
+                  <img class="icon" src="icons/star-fill.svg">
+                  <img class="icon" src="icons/star-fill.svg">
+                  <img class="icon" src="icons/star-fill.svg">
+                  <img class="icon" src="icons/star.svg">
+                  <img class="icon" src="icons/star.svg">
+                </div>
+              </span>
+            </li>
+          </a>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================== End Skills ============================== -->
+
+  <hr class="container">
+  <h1 class="text-center" id="projects">Projects</h1>
+  <hr class="container">
+  <br>
+
+  <!-- ============================== Start Projects ============================== -->
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <a href="projects/project.html" class="noDecoration">
+        <div class="card col-md-4 mb-4">
+          <div id="card0" class="border rounded" onmouseover="addShadow(this.id)" onmouseout="removeShadow(this.id)">
+            <img class="card-img-top rounded" src="images/placeHolder.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
           </div>
+      </a>
+    </div>
+    <a href="projects/project.html" class="noDecoration">
+      <div class="card col-md-4 mb-4">
+        <div id="card1" class="border rounded" onmouseover="addShadow(this.id)" onmouseout="removeShadow(this.id)">
+          <img class="card-img-top rounded" src="images/placeHolder.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+    </a>
+  </div>
+  <a href="projects/project.html" class="noDecoration">
+    <div class="card col-md-4 mb-4">
+      <div id="card2" class="border rounded" onmouseover="addShadow(this.id)" onmouseout="removeShadow(this.id)">
+        <img class="card-img-top rounded" src="images/placeHolder.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
       </div>
-
-      <div class="jumbotron container">
-        <div class="row">
-          <div class="col-md-4"><h4>Folsom Lake College</h4><p>May 2016 - June 2019</p><p style="position: relative; bottom: 15px;">GPA: 3.93</p></div>
-          <div class="col-md-8"><h4>Description</h4><p>
-            I graduated Folsom Lake College (FLC) in Spring 2019 with two associate degrees. One in Computer Science and the other in Math/Science.</p>
-            <img class="icon" src="icons/map.svg">
-            <a href="https://flc.losrios.edu/" target="_blank">Folsom Lake College</a>
+  </a>
+  </div>
+  <div class="row justify-content-center">
+    <a href="projects/project.html" class="noDecoration">
+      <div class="card col-md-4 mb-4">
+        <div id="card3" class="border rounded" onmouseover="addShadow(this.id)" onmouseout="removeShadow(this.id)">
+          <img class="card-img-top rounded" src="images/placeHolder.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
         </div>
-      </div> 
-
-      <!-- ============================== End Education ============================== -->
-
-      <hr class="container">
-      <h1 class="text-center">Experience</h1>
-      <hr class="container">
-      <br>
-
-      <!-- ============================== Start Experience ============================== -->
-
-      <div class="jumbotron container">
-        <div class="row">
-          <div class="col-md-4"><h4>Sacramento Department of Utilities</h4><p>June 2019 - July 2020</p><p style="position: relative; bottom: 15px;">Student Intern</p></div>
-          <div class="col-md-8"><h4>Description</h4><p>
-            At this internship I was responsible for using, managing, and querying a financial database to produce reports at the directors' request. I actively used SQL and DAX inside of Microsoft Power BI to produce the reports.</p>
-            <img class="icon" src="icons/map.svg">
-            <a href="https://www.cityofsacramento.org/utilities" target="_blank">Sacramento DOU</a>
-          </div>
+    </a>
+  </div>
+  <a href="projects/project.html" class="noDecoration">
+    <div class="card col-md-4 mb-4">
+      <div id="card4" class="border rounded" onmouseover="addShadow(this.id)" onmouseout="removeShadow(this.id)">
+        <img class="card-img-top rounded" src="images/placeHolder.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
       </div>
+  </a>
+  </div>
+  </div>
+  </div>
 
-      <div class="jumbotron container">
-        <div class="row">
-          <div class="col-md-4"><h4>Folsom Lake College</h4><p>January 2019 - May 2019</p><p style="position: relative; bottom: 15px;">Tutor</p></div>
-          <div class="col-md-8"><h4>Description</h4><p>
-            Worked as a Computer Science and Math tutor at FLC. I was responsible for assisting other students in understanding essential topics in their programming courses. In addition, I assisted in tutoring Algebra/Calculus students.</p>
-            <img class="icon" src="icons/map.svg">
-            <a href="https://flc.losrios.edu/student-resources/tutoring" target="_blank">Folsom Lake Tutoring</a>
-          </div>
-        </div>
-      </div>
+  <!-- ============================== End Projects ============================== -->
 
-      <!-- ============================== End Experience ============================== -->
+  <hr class="container">
+  <h1 class="text-center" id="contactMe">Contact Me</h1>
+  <hr class="container">
+  <br>
 
-      <hr class="container">
-      <h1 class="text-center">Skills</h1>
-      <hr class="container">
-      <br>
+  <!-- ============================== Start Contact Me ============================== -->
 
-      <!-- ============================== Start Skills ============================== -->
-
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <ul class="list-group">
-              <li id="listOne" class="list-group-item d-flex justify-content-between align-items-center" onmouseover='enlargeStars("starOne")' onmouseout='shrinkStars("starOne")'>C/C++
-                <span>
-                  <div id="starOne" class="listHighlight">
-                    <img class="icon" src="icons/star-fill.svg">
-                    <img class="icon" src="icons/star-fill.svg">
-                    <img class="icon" src="icons/star-fill.svg">
-                    <img class="icon" src="icons/star-fill.svg">
-                    <img class="icon" src="icons/star-fill.svg">
-                </div>
-                </span></li>
-              <li class="list-group-item d-flex justify-content-between align-items-center" onmouseover='enlargeStars("starTwo")' onmouseout='shrinkStars("starTwo")'>Java
-                <span>
-                  <div id="starTwo" class="listHighlight">
-                    <img class="icon" src="icons/star-fill.svg">
-                    <img class="icon" src="icons/star-fill.svg">
-                    <img class="icon" src="icons/star-fill.svg">
-                    <img class="icon" src="icons/star-fill.svg">
-                    <img class="icon" src="icons/star-half.svg">
-                </div>
-                </span></li>
-              <li class="list-group-item d-flex justify-content-between align-items-center" onmouseover='enlargeStars("starThree")' onmouseout='shrinkStars("starThree")'>Python
-                <span>
-                  <div id="starThree" class="listHighlight">
-                    <img class="icon" src="icons/star-fill.svg">
-                    <img class="icon" src="icons/star-fill.svg">
-                    <img class="icon" src="icons/star-fill.svg">
-                    <img class="icon" src="icons/star.svg">
-                    <img class="icon" src="icons/star.svg">
-                </div>
-                </span></li>
-            </ul> 
-          </div>
-          <div class="col-sm-6">
-            <ul class="list-group">
-              <li class="list-group-item d-flex justify-content-between align-items-center" onmouseover='enlargeStars("starFour")' onmouseout='shrinkStars("starFour")'>SQL
-                <span>
-                  <div id="starFour" class="listHighlight">
-                    <img class="icon" src="icons/star-fill.svg">
-                    <img class="icon" src="icons/star-fill.svg">
-                    <img class="icon" src="icons/star-fill.svg">
-                    <img class="icon" src="icons/star.svg">
-                    <img class="icon" src="icons/star.svg">
-                </div>
-                </span></li>
-              <li class="list-group-item d-flex justify-content-between align-items-center" onmouseover='enlargeStars("starFive")' onmouseout='shrinkStars("starFive")'>PHP
-                <span>
-                  <div id="starFive" class="listHighlight">
-                    <img class="icon" src="icons/star-fill.svg">
-                    <img class="icon" src="icons/star-fill.svg">
-                    <img class="icon" src="icons/star-fill.svg">
-                    <img class="icon" src="icons/star.svg">
-                    <img class="icon" src="icons/star.svg">
-                </div>
-                </span></li>
-              <li class="list-group-item d-flex justify-content-between align-items-center" onmouseover='enlargeStars("starSix")' onmouseout='shrinkStars("starSix")'>Javascript
-                <span>
-                  <div id="starSix" class="listHighlight">
-                    <img class="icon" src="icons/star-fill.svg">
-                    <img class="icon" src="icons/star-fill.svg">
-                    <img class="icon" src="icons/star-fill.svg">
-                    <img class="icon" src="icons/star.svg">
-                    <img class="icon" src="icons/star.svg">
-                  </div>
-                </span></li>
-            </ul>          
-          </div>
-        </div>
-      </div> 
-
-      <!-- ============================== End Skills ============================== -->
-
-      <hr class="container">
-      <h1 class="text-center">Projects</h1>
-      <hr class="container">
-      <br>
-
-      <!-- ============================== Start Projects ============================== -->
-
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="card col-sm-4 mb-4">
-            <div id="card0" class="border rounded" onmouseover="addShadow(this.id)" onmouseout="removeShadow(this.id)">
-              <img class="card-img-top rounded" src="images/mugshot.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-          </div>
-          <div class="card col-sm-4 mb-4">
-            <div id="card1" class="border rounded" onmouseover="addShadow(this.id)" onmouseout="removeShadow(this.id)">
-              <img class="card-img-top rounded" src="images/mugshot.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-          </div>
-          <div class="card col-sm-4 mb-4">
-            <div id="card2" class="border rounded" onmouseover="addShadow(this.id)" onmouseout="removeShadow(this.id)">
-              <img class="card-img-top rounded" src="images/mugshot.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="card col-sm-4 mb-4">
-            <div id="card3" class="border rounded" onmouseover="addShadow(this.id)" onmouseout="removeShadow(this.id)">
-              <img class="card-img-top rounded" src="images/mugshot.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-          </div>
-          <div class="card col-sm-4 mb-4">
-            <div id="card4" class="border rounded" onmouseover="addShadow(this.id)" onmouseout="removeShadow(this.id)">
-              <img class="card-img-top rounded" src="images/mugshot.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ============================== End Projects ============================== -->
-
-      <hr class="container">
-      <h1 class="text-center">Contact Me</h1>
-      <hr class="container">
-      <br>
-
-      <!-- ============================== Start Contact Me ============================== -->
-
-      <!-- ============================== End Contact Me ============================== -->
+  <!-- ============================== End Contact Me ============================== -->
 
 
+  <!-- Optional JavaScript -->
+  <script src="javascript/script.js"></script>
 
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
 
-
-  
-
-    <!-- Optional JavaScript -->
-    <script src="javascript/script.js"></script>
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  </body>
 </html>
