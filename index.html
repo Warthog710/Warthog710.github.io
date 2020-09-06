@@ -16,7 +16,10 @@
   <title>Personal Website</title>
 </head>
 
-<body onload="getPgRdy()" data-spy="scroll" data-target=".navbar">
+<body class="" onload="getPgRdy()" data-spy="scroll" data-target=".navbar" style="margin-bottom: 0;">
+
+  <!-- Blue: rgb(4, 114, 225) -->
+  <!-- -->
 
   <!-- ============================== Start Header ============================== -->
 
@@ -29,17 +32,15 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav nav-pills">
-          <a class="nav-item nav-link" href="#education"> Education</a>
-          <a class="nav-item nav-link" href="#experience"> Experience</a>
-          <a class="nav-item nav-link" href="#skills"> Skills</a>
-          <a class="nav-item nav-link" href="#projects"> Projects</a>
-          <a class="nav-item nav-link" href="#contactMe"> Contact Me</a>
+          <a class="nav-item nav-link text-white" href="#education"> Education</a>
+          <a class="nav-item nav-link text-white" href="#experience"> Experience</a>
+          <a class="nav-item nav-link text-white" href="#skills"> Skills</a>
+          <a class="nav-item nav-link text-white" href="#projects"> Projects</a>
+          <a class="nav-item nav-link text-white" href="#contactMe"> Contact Me</a>
         </div>
       </div>
     </div>
   </nav>
-
-  <!-- ============================== End Header ============================== -->
 
   <br>
   <br>
@@ -55,71 +56,87 @@
           degree. I am eager to learn and develop my skills in programming and technology and look forward to new and
           challenging experiences. I am a quick learner that is diligient and personable.</p>
       </div>
-      <div class="center col-lg-4"><img src="images/mugshot.jpg" class="rounded-circle img-fluid center"> </div>
+      <div class="center col-lg-4"><img src="images/mugshot.jpg" class="rounded-circle img-fluid center"
+          style="max-width: 90%; max-height: 90%;"> </div>
       <div class="col-lg-4 text-center">
         <h2>Details</h2>
-        <h5 class="text-left"><strong>Name:</strong><br>Quinn Roemer</h5><br>
-        <h5 class="text-left"><strong>Age:</strong><br>
-          <div id="age"></div>
-        </h5><br>
-        <h5 class="text-left"><strong>Location:</strong><br><img class="icon" src="icons/geo-alt.svg"><a
-            href="https://www.google.com/maps/place/Sacramento,+CA" target="_blank"> Sacramento, CA</a></h5>
+        <div>
+          <li class="list-group-item">
+            <h5 class="d-flex justify-content-between"><strong>Name:</strong><span class="">Quinn Roemer</span></h5>
+          </li>
+          <br>
+          <li class="list-group-item">
+            <h5 class="d-flex justify-content-between"><strong>Age:</strong>
+              <div id="age"></div>
+            </h5>
+          </li>
+          <br>
+          <li class="list-group-item">
+            <h5 class="d-flex justify-content-between"><strong>Location:</strong>
+              <div><img class="icon" src="icons/geo-alt.svg"><a href="https://www.google.com/maps/place/Sacramento,+CA"
+                  target="_blank"> Sacramento, CA</a>
+            </h5>
+        </div>
+        </li>
       </div>
     </div>
   </div>
+  </div>
 
-  <!-- ============================== End Profile ============================== -->
-  <hr class="container">
-  <h1 class="text-center" id="education">Education</h1>
-  <hr class="container">
-  <br>
+
+
+
+
 
   <!-- ============================== Start Education ============================== -->
 
-  <div class="jumbotron container">
-    <div class="row">
-      <div class="col-md-4">
-        <h4>Sacramento State University</h4>
-        <p>August 2019 - Present</p>
-        <p style="position: relative; bottom: 15px;">GPA: 3.95</p>
+  <div style="background-color: rgb(249, 249, 243); padding-bottom: 50px;">
+    <h1 class="text-center" id="education" style="padding-top:50px">Education</h1>
+    <hr class="container">
+    <br>
+
+    <div class="jumbotron container">
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Sacramento State University</h4>
+          <p>August 2019 - Present</p>
+          <p style="position: relative; bottom: 15px;">GPA: 3.95</p>
+        </div>
+        <div class="col-md-8">
+          <h4>Description</h4>
+          <p>
+            Currently pursuing my bachelor's in Computer Science. I am on track to graduate after the Spring 2021
+            semester.</p>
+          <img class="icon" src="icons/box-arrow-up-right.svg">
+          <a href="https://www.csus.edu/" target="_blank">Sacramento State University</a>
+        </div>
       </div>
-      <div class="col-md-8">
-        <h4>Description</h4>
-        <p>
-          Currently pursuing my bachelor's in Computer Science. I am on track to graduate after the Spring 2021
-          semester.</p>
-        <img class="icon" src="icons/box-arrow-up-right.svg">
-        <a href="https://www.csus.edu/" target="_blank">Sacramento State University</a>
+    </div>
+
+    <div class="jumbotron container">
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Folsom Lake College</h4>
+          <p>May 2016 - June 2019</p>
+          <p style="position: relative; bottom: 15px;">GPA: 3.93</p>
+        </div>
+        <div class="col-md-8">
+          <h4>Description</h4>
+          <p>
+            I graduated Folsom Lake College (FLC) in Spring 2019 with two associate degrees. One in Computer Science and
+            the other in Math/Science.</p>
+          <img class="icon" src="icons/box-arrow-up-right.svg">
+          <a href="https://flc.losrios.edu/" target="_blank">Folsom Lake College</a>
+        </div>
       </div>
     </div>
   </div>
-
-  <div class="jumbotron container">
-    <div class="row">
-      <div class="col-md-4">
-        <h4>Folsom Lake College</h4>
-        <p>May 2016 - June 2019</p>
-        <p style="position: relative; bottom: 15px;">GPA: 3.93</p>
-      </div>
-      <div class="col-md-8">
-        <h4>Description</h4>
-        <p>
-          I graduated Folsom Lake College (FLC) in Spring 2019 with two associate degrees. One in Computer Science and
-          the other in Math/Science.</p>
-        <img class="icon" src="icons/box-arrow-up-right.svg">
-        <a href="https://flc.losrios.edu/" target="_blank">Folsom Lake College</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- ============================== End Education ============================== -->
-
-  <hr class="container">
-  <h1 class="text-center" id="experience">Experience</h1>
-  <hr class="container">
-  <br>
 
   <!-- ============================== Start Experience ============================== -->
+
+  <h1 class="text-center" id="experience" style="padding-top:50px">Experience</h1>
+  <hr class="container">
+  <br>
 
   <div class="jumbotron container">
     <div class="row">
@@ -159,122 +176,122 @@
     </div>
   </div>
 
-  <!-- ============================== End Experience ============================== -->
-
-  <hr class="container">
-  <h1 class="text-center" id="skills">Skills</h1>
-  <hr class="container">
-  <br>
-
   <!-- ============================== Start Skills ============================== -->
 
+  <div style="background-color: rgb(249, 249, 243); padding-bottom: 50px;">
+    <h1 class="text-center" id="skills" style="padding-top:50px;">Skills</h1>
+    <hr class="container">
+    <br>
 
-
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <ul class="list-group">
-          <a data-toggle="tooltip" data-placement="right" title="Proficient">
-            <li class="list-group-item d-flex justify-content-between align-items-center backgroundOnHover"
-              onmouseover='enlargeStars("starOne")' onmouseout='shrinkStars("starOne")'>C/C++
-              <span>
-                <div id="starOne" class="listHighlight">
-                  <img class="icon" src="icons/star-fill.svg">
-                  <img class="icon" src="icons/star-fill.svg">
-                  <img class="icon" src="icons/star-fill.svg">
-                  <img class="icon" src="icons/star-fill.svg">
-                  <img class="icon" src="icons/star-fill.svg">
-                </div>
-              </span>
-            </li>
-          </a>
-          <a data-toggle="tooltip" data-placement="right" title="Proficient">
-            <li class="list-group-item d-flex justify-content-between align-items-center backgroundOnHover"
-              onmouseover='enlargeStars("starTwo")' onmouseout='shrinkStars("starTwo")'>Java
-              <span>
-                <div id="starTwo" class="listHighlight">
-                  <img class="icon" src="icons/star-fill.svg">
-                  <img class="icon" src="icons/star-fill.svg">
-                  <img class="icon" src="icons/star-fill.svg">
-                  <img class="icon" src="icons/star-fill.svg">
-                  <img class="icon" src="icons/star-half.svg">
-                </div>
-              </span>
-            </li>
-          </a>
-          <a data-toggle="tooltip" data-placement="right" title="Intermediate">
-            <li class="list-group-item d-flex justify-content-between align-items-center backgroundOnHover"
-              onmouseover='enlargeStars("starThree")' onmouseout='shrinkStars("starThree")'>Python
-              <span>
-                <div id="starThree" class="listHighlight">
-                  <img class="icon" src="icons/star-fill.svg">
-                  <img class="icon" src="icons/star-fill.svg">
-                  <img class="icon" src="icons/star-fill.svg">
-                  <img class="icon" src="icons/star.svg">
-                  <img class="icon" src="icons/star.svg">
-                </div>
-              </span>
-            </li>
-          </a>
-        </ul>
-      </div>
-      <div class="col-sm-6">
-        <ul class="list-group">
-          <a data-toggle="tooltip" data-placement="right" title="Intermediate">
-            <li class="list-group-item d-flex justify-content-between align-items-center backgroundOnHover"
-              onmouseover='enlargeStars("starFour")' onmouseout='shrinkStars("starFour")'>SQL
-              <span>
-                <div id="starFour" class="listHighlight">
-                  <img class="icon" src="icons/star-fill.svg">
-                  <img class="icon" src="icons/star-fill.svg">
-                  <img class="icon" src="icons/star-fill.svg">
-                  <img class="icon" src="icons/star.svg">
-                  <img class="icon" src="icons/star.svg">
-                </div>
-              </span>
-            </li>
-          </a>
-          <a data-toggle="tooltip" data-placement="right" title="Intermediate">
-            <li class="list-group-item d-flex justify-content-between align-items-center backgroundOnHover"
-              onmouseover='enlargeStars("starFive")' onmouseout='shrinkStars("starFive")'>PHP
-              <span>
-                <div id="starFive" class="listHighlight">
-                  <img class="icon" src="icons/star-fill.svg">
-                  <img class="icon" src="icons/star-fill.svg">
-                  <img class="icon" src="icons/star-fill.svg">
-                  <img class="icon" src="icons/star.svg">
-                  <img class="icon" src="icons/star.svg">
-                </div>
-              </span>
-            </li>
-          </a>
-          <a data-toggle="tooltip" data-placement="right" title="Intermediate">
-            <li class="list-group-item d-flex justify-content-between align-items-center backgroundOnHover"
-              onmouseover='enlargeStars("starSix")' onmouseout='shrinkStars("starSix")'>JavaScript
-              <span>
-                <div id="starSix" class="listHighlight">
-                  <img class="icon" src="icons/star-fill.svg">
-                  <img class="icon" src="icons/star-fill.svg">
-                  <img class="icon" src="icons/star-fill.svg">
-                  <img class="icon" src="icons/star.svg">
-                  <img class="icon" src="icons/star.svg">
-                </div>
-              </span>
-            </li>
-          </a>
-        </ul>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <ul class="list-group">
+            <a data-toggle="tooltip" data-placement="right" title="Proficient">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center backgroundOnHover creamBackground"
+                onmouseover='enlargeStars("starOne")' onmouseout='shrinkStars("starOne")'>C/C++
+                <span>
+                  <div id="starOne" class="listHighlight">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                  </div>
+                </span>
+              </li>
+            </a>
+            <a data-toggle="tooltip" data-placement="right" title="Proficient">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center backgroundOnHover creamBackground"
+                onmouseover='enlargeStars("starTwo")' onmouseout='shrinkStars("starTwo")'>Java
+                <span>
+                  <div id="starTwo" class="listHighlight">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-half.svg">
+                  </div>
+                </span>
+              </li>
+            </a>
+            <a data-toggle="tooltip" data-placement="right" title="Intermediate">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center backgroundOnHover creamBackground"
+                onmouseover='enlargeStars("starThree")' onmouseout='shrinkStars("starThree")'>Python
+                <span>
+                  <div id="starThree" class="listHighlight">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star.svg">
+                    <img class="icon" src="icons/star.svg">
+                  </div>
+                </span>
+              </li>
+            </a>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <ul class="list-group">
+            <a data-toggle="tooltip" data-placement="right" title="Intermediate">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center backgroundOnHover creamBackground"
+                onmouseover='enlargeStars("starFour")' onmouseout='shrinkStars("starFour")'>SQL
+                <span>
+                  <div id="starFour" class="listHighlight">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star.svg">
+                    <img class="icon" src="icons/star.svg">
+                  </div>
+                </span>
+              </li>
+            </a>
+            <a data-toggle="tooltip" data-placement="right" title="Intermediate">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center backgroundOnHover creamBackground"
+                onmouseover='enlargeStars("starFive")' onmouseout='shrinkStars("starFive")'>PHP
+                <span>
+                  <div id="starFive" class="listHighlight">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star.svg">
+                    <img class="icon" src="icons/star.svg">
+                  </div>
+                </span>
+              </li>
+            </a>
+            <a data-toggle="tooltip" data-placement="right" title="Intermediate">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center backgroundOnHover creamBackground"
+                onmouseover='enlargeStars("starSix")' onmouseout='shrinkStars("starSix")'>JavaScript
+                <span>
+                  <div id="starSix" class="listHighlight">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star.svg">
+                    <img class="icon" src="icons/star.svg">
+                  </div>
+                </span>
+              </li>
+            </a>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- ============================== End Skills ============================== -->
+  <!-- ============================== Start Projects ============================== -->
 
-  <hr class="container">
-  <h1 class="text-center" id="projects">Projects</h1>
+  <h1 class="text-center" id="projects" style="padding-top:50px;">Projects</h1>
   <hr class="container">
   <br>
-
-  <!-- ============================== Start Projects ============================== -->
 
   <div class="container">
     <div class="row justify-content-center">
@@ -339,18 +356,32 @@
       </div>
   </a>
   </div>
-  
-  <!-- ============================== End Projects ============================== -->
-
-  <hr class="container">
-  <h1 class="text-center" id="contactMe">Contact Me</h1>
-  <hr class="container">
-  <br>
+  </div>
+  </div>
+  </div>
 
   <!-- ============================== Start Contact Me ============================== -->
 
-  <!-- ============================== End Contact Me ============================== -->
-
+  <div class="bg-dark text-white" style="box-sizing: border-box; padding-top: 50px; border:1px solid rgb(52, 60, 68);">
+    <div>
+      <h1 class="text-center" id="contactMe">Contact Me</h1>
+      <blockquote class="blockqoute text-center"><i>"Being ignorant is not so much a shame, as being unwilling to
+          learn."
+          <br><strong>– Benjamin Franklin </strong></i></blockquote>
+      <hr class="container" style="background-color: white;">
+    </div>
+    <br>
+    <ul class="container" style="list-style-type: none; text-align: center; padding-bottom:200px;">
+      <li style="display: inline-block; padding-left:20px; padding-right:20px;">
+        <h5><a href="https://www.linkedin.com/in/quinn-roemer-892427185" target="_blank" class="noDecoration"><img
+              class="imageIcon icon" src="images/linkedIn.png"> www.linkedin.com/in/quinn-roemer</a></h5>
+      </li>
+      <li style="display: inline-block; padding-left:20px; padding-right:20px;">
+        <h5><a href="mailto:qroemer.contact@gmail.com" target="_blank" class="noDecoration"><img class="imageIcon icon"
+              src="icons/envelope.svg"> qroemer.contact@gmail.com</a></h5>
+      </li>
+    </ul>
+  </div>
 
   <!-- Optional JavaScript -->
   <script src="javascript/script.js"></script>
