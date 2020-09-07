@@ -59,18 +59,16 @@
 }
 
 .backgroundOnHover:hover {
-  background-color: rgba(175, 175, 175, 0.753);
+  background-color: rgba(37, 112, 170, .8);
   border-radius: 5px;
 }
 
 .nav-pills .nav-link.active, .nav-pills .nav-link.active:hover, .nav-pills .nav-link.active:focus {
-  background-color: rgba(175, 175, 175, 0.753);
-  
+  background-color: rgba(37, 112, 170);
 }
 
 .logo {
   border-radius: 50%;
-  border: 3px solid rgba(175, 175, 175, 0.753);
   margin-right: 5px;
 }
 
@@ -79,3 +77,16 @@
   height: 1.5em;
 }
 
+.navbar-collapse {
+  text-align: center;
+}
+
+.colorBlue {
+  color: rgb(37, 112, 170);
+}
+
+.colorLink {
+  color: inherit;
+  text-decoration: underline;
+  padding-left: 2px;
+}
