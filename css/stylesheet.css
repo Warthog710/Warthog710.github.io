@@ -72,6 +72,28 @@
   margin-right: 5px;
 }
 
+.max90 {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.colorCream {
+  background-color: rgb(249, 249, 243);
+}
+
+.bPad50 {
+  padding-bottom: 50px;
+}
+
+.tPad50 {
+  padding-top: 50px;
+}
+
+.jumboThirdLine {
+  position: relative;
+  bottom: 15px;
+}
+
 .imageIcon {
   width: 1.5em;
   height: 1.5em;
@@ -85,8 +107,29 @@
   color: rgb(37, 112, 170);
 }
 
+.colorBackgroundWhite {
+  background-color: white;
+}
+
 .colorLink {
   color: inherit;
   text-decoration: underline;
   padding-left: 2px;
+}
+
+.cMBox {
+  box-sizing: border-box;
+  border: 1px solid rgb(52, 60, 68);
+}
+
+.cmUL {
+  list-style-type: none;
+  text-align: center;
+  padding-bottom: 200px;
+}
+
+.cmLI {
+  display: inline-block;
+  padding-left: 3vw;
+  padding-right: 3vw;
 }

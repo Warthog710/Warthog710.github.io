@@ -53,12 +53,12 @@
     <div class="row">
       <div class="col-lg-4 text-center">
         <h2 class="colorBlue">About Me</h2>
-        <p class="text-center">I am a Computer Science student at Sacramento State University pursuing my bachelor's
-          degree. I am eager to learn and develop my skills in programming/technology. I look forward to new and
-          challenging experiences. I am a quick learner that is diligient and personable.</p>
+        <p class="text-center"> I am a Computer Science student at Sacramento State University pursuing my bachelor's
+          degree. Eager to learn and develop my skills in programming/technology, I look forward to new and challenging
+          experiences. I learn quickly and am diligent and personable.</p>
       </div>
-      <div class="center col-lg-4"><img src="images/mugshot.jpg" class="rounded-circle img-fluid center"
-          style="max-width: 90%; max-height: 90%;"> </div>
+      <div class="col-lg-4"><img src="images/mugshot.jpg" class="rounded-circle img-fluid center max90">
+      </div>
       <div class="col-lg-4 text-center">
         <h2 class="colorBlue">Details</h2>
         <div>
@@ -91,8 +91,8 @@
 
   <!-- ============================== Start Education ============================== -->
 
-  <div style="background-color: rgb(249, 249, 243); padding-bottom: 50px;">
-    <h1 class="text-center colorBlue" id="education" style="padding-top:50px">Education</h1>
+  <div class="colorCream bPad50">
+    <h1 class="text-center colorBlue tPad50" id="education">Education</h1>
     <hr class="container pr-0 pl-0">
     <br>
 
@@ -101,7 +101,7 @@
         <div class="col-md-4">
           <h4>Sacramento State University</h4>
           <p>August 2019 - Present</p>
-          <p style="position: relative; bottom: 15px;">GPA: 3.95</p>
+          <p class="jumboThirdLine">GPA: 3.95</p>
         </div>
         <div class="col-md-8">
           <h4>Description</h4>
@@ -119,7 +119,7 @@
         <div class="col-md-4">
           <h4>Folsom Lake College</h4>
           <p>January 2016 - May 2019</p>
-          <p style="position: relative; bottom: 15px;">GPA: 3.93</p>
+          <p class="jumboThirdLine">GPA: 3.93</p>
         </div>
         <div class="col-md-8">
           <h4>Description</h4>
@@ -135,7 +135,7 @@
 
   <!-- ============================== Start Experience ============================== -->
 
-  <h1 class="text-center colorBlue" id="experience" style="padding-top:50px">Experience</h1>
+  <h1 class="text-center colorBlue tPad50" id="experience">Experience</h1>
   <hr class="container pr-0 pl-0">
   <br>
 
@@ -144,12 +144,13 @@
       <div class="col-md-4">
         <h4>Sacramento Department of Utilities</h4>
         <p>June 2019 - July 2020</p>
-        <p style="position: relative; bottom: 15px;">Student Intern</p>
+        <p class="jumboThirdLine">Student Intern</p>
       </div>
       <div class="col-md-8">
         <h4>Description</h4>
         <p>
-          At this internship I was responsible for using, managing, and querying a financial database to produce reports
+          At this internship, I was responsible for using, managing, and querying a financial database to produce
+          reports
           at the directors' request. I actively used SQL and DAX inside of Microsoft Power BI in my daily tasks.
         </p>
         <img class="icon" src="icons/box-arrow-up-right.svg">
@@ -161,16 +162,36 @@
   <div class="jumbotron container">
     <div class="row">
       <div class="col-md-4">
+        <h4>Rock-N-Water</h4>
+        <p>September 2019 - January 2020</p>
+        <p class="jumboThirdLine">Employee</p>
+      </div>
+      <div class="col-md-8">
+        <h4>Description</h4>
+        <p>
+          I was brought on to solve various computer technology-related issues. My work involved modifying and
+          maintaining a File Maker Pro database, WordPress website, and various other computer hardware.
+        </p>
+        <img class="icon" src="icons/box-arrow-up-right.svg">
+        <a class="colorLink" href="https://www.rocknwater.com/" target="_blank">Rock-N-Water</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="jumbotron container">
+    <div class="row">
+      <div class="col-md-4">
         <h4>Folsom Lake College</h4>
         <p>January 2019 - May 2019</p>
-        <p style="position: relative; bottom: 15px;">Tutor</p>
+        <p class="jumboThirdLine">Tutor</p>
       </div>
       <div class="col-md-8">
         <h4>Description</h4>
         <p>
           Worked as a Computer Science and Math tutor at FLC. I was responsible for assisting other students in
           understanding essential topics in their programming courses. In addition, I assisted in tutoring
-          Algebra/Calculus students.</p>
+          Algebra/Calculus students.
+        </p>
         <img class="icon" src="icons/box-arrow-up-right.svg">
         <a class="colorLink" href="https://flc.losrios.edu/student-resources/tutoring" target="_blank">Folsom Lake
           Tutoring</a>
@@ -180,8 +201,8 @@
 
   <!-- ============================== Start Skills ============================== -->
 
-  <div style="background-color: rgb(249, 249, 243); padding-bottom: 50px;">
-    <h1 class="text-center colorBlue" id="skills" style="padding-top:50px;">Skills</h1>
+  <div class="colorCream bPad50">
+    <h1 class="text-center colorBlue tPad50" id="skills">Skills</h1>
     <hr class="container pr-0 pl-0">
     <br>
 
@@ -291,8 +312,16 @@
 
   <!-- ============================== Start Projects ============================== -->
 
-  <h1 class="text-center colorBlue" id="projects" style="padding-top:50px;">Projects</h1>
-  <hr class="container pr-0 pl-0">
+  <div>
+    <h1 class="text-center colorBlue tPad50" id="projects">Projects</h1>
+    <!-- Place this tag where you want the button to render. -->
+    <center>
+      <a class="github-button" href="https://github.com/Warthog710" target="_blank"
+        data-color-scheme="no-preference: light; light: light; dark: light;" data-size="large"
+        aria-label="Use this template ntkme/github-buttons on GitHub">My GitHub</a>
+    </center>
+    <hr class="container pr-0 pl-0">
+  </div>
   <br>
 
   <!-- Project rows, each row contains 4 card divs -->
@@ -300,15 +329,15 @@
     <div class="row justify-content-center">
       <div class="col-lg-3 col-md-6 col-sm-6">
         <ul class="list-group">
-          <a href="projects/project.html" class="noDecoration">
+          <a href="https://github.com/Warthog710/pi_tic-tac-toe" class="noDecoration" target="_blank">
             <div class="card mb-4">
               <div id="card0" class="border rounded" onmouseover="addShadow(this.id)"
                 onmouseout="removeShadow(this.id)">
-                <img class="card-img-top rounded" src="images/placeHolder.png">
+                <img class="card-img-top rounded" src="images/pythonTicTacToe.jpg">
                 <div class="card-body">
-                  <h5 class="card-title">Card Title</h5>
-                  <p class="card-text">Testing card text...</p>
-                  <p class="card-text"><small class="text-muted">January 20, 1956</small></p>
+                  <h5 class="card-title">Python Tic-Tac-Toe</h5>
+                  <p class="card-text">Python implementation of Tic-Tac-Toe using Minimax.</p>
+                  <p class="card-text"><small class="text-muted">September 10, 2020</small></p>
                 </div>
               </div>
             </div>
@@ -317,15 +346,15 @@
       </div>
       <div class="col-lg-3 col-md-6 col-sm-6">
         <ul class="list-group">
-          <a href="projects/project.html" class="noDecoration">
+          <a href="https://github.com/Warthog710/Tower-Defense-Game" class="noDecoration" target="_blank">
             <div class="card mb-4">
               <div id="card1" class="border rounded" onmouseover="addShadow(this.id)"
                 onmouseout="removeShadow(this.id)">
-                <img class="card-img-top rounded" src="images/placeHolder.png">
+                <img class="card-img-top rounded" src="images/towerDefense.jpg">
                 <div class="card-body">
-                  <h5 class="card-title">Card Title</h5>
-                  <p class="card-text">Testing card text...</p>
-                  <p class="card-text"><small class="text-muted">January 20, 1956</small></p>
+                  <h5 class="card-title">Tower Defense Game</h5>
+                  <p class="card-text">Android Tower Defense game built for CSC 133.</p>
+                  <p class="card-text"><small class="text-muted">May 12, 2020</small></p>
                 </div>
               </div>
             </div>
@@ -334,32 +363,15 @@
       </div>
       <div class="col-lg-3 col-md-6 col-sm-6">
         <ul class="list-group">
-          <a href="projects/project.html" class="noDecoration">
+          <a href="https://github.com/Warthog710/church-library" class="noDecoration" target="_blank">
             <div class="card mb-4">
               <div id="card2" class="border rounded" onmouseover="addShadow(this.id)"
                 onmouseout="removeShadow(this.id)">
-                <img class="card-img-top rounded" src="images/placeHolder.png">
+                <img class="card-img-top rounded" src="images/churchLibrary.jpg">
                 <div class="card-body">
-                  <h5 class="card-title">Card Title</h5>
-                  <p class="card-text">Testing card text...</p>
-                  <p class="card-text"><small class="text-muted">January 20, 1956</small></p>
-                </div>
-              </div>
-            </div>
-          </a>
-        </ul>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-6">
-        <ul class="list-group">
-          <a href="projects/project.html" class="noDecoration">
-            <div class="card mb-4">
-              <div id="card3" class="border rounded" onmouseover="addShadow(this.id)"
-                onmouseout="removeShadow(this.id)">
-                <img class="card-img-top rounded" src="images/placeHolder.png">
-                <div class="card-body">
-                  <h5 class="card-title">Card Title</h5>
-                  <p class="card-text">Testing card text...</p>
-                  <p class="card-text"><small class="text-muted">January 20, 1956</small></p>
+                  <h5 class="card-title">Libray Front-end</h5>
+                  <p class="card-text">Library front-end built for a SQL Database.</p>
+                  <p class="card-text"><small class="text-muted">October 22, 2018</small></p>
                 </div>
               </div>
             </div>
@@ -370,64 +382,24 @@
   </div>
 
   <!-- New row of projects -->
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-3 col-md-6 col-sm-6">
-        <ul class="list-group">
-          <a href="projects/project.html" class="noDecoration">
-            <div class="card mb-4">
-              <div id="card4" class="border rounded" onmouseover="addShadow(this.id)"
-                onmouseout="removeShadow(this.id)">
-                <img class="card-img-top rounded" src="images/placeHolder.png">
-                <div class="card-body">
-                  <h5 class="card-title">Card Title</h5>
-                  <p class="card-text">Testing card text...</p>
-                  <p class="card-text"><small class="text-muted">January 20, 1956</small></p>
-                </div>
-              </div>
-            </div>
-          </a>
-        </ul>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-6">
-        <ul class="list-group">
-          <a href="projects/project.html" class="noDecoration">
-            <div class="card mb-4">
-              <div id="card5" class="border rounded" onmouseover="addShadow(this.id)"
-                onmouseout="removeShadow(this.id)">
-                <img class="card-img-top rounded" src="images/placeHolder.png">
-                <div class="card-body">
-                  <h5 class="card-title">Card Title</h5>
-                  <p class="card-text">Testing card text...</p>
-                  <p class="card-text"><small class="text-muted">January 20, 1956</small></p>
-                </div>
-              </div>
-            </div>
-          </a>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-
 
   <!-- ============================== Start Contact Me ============================== -->
 
-  <div class="bg-dark text-white" style="box-sizing: border-box; padding-top: 50px; border:1px solid rgb(52, 60, 68);">
+  <div class="bg-dark text-white tPad50 cMBox">
     <div>
       <h1 class="text-center" id="contactMe">Contact Me</h1>
       <blockquote class="blockqoute text-center"><i>"Being ignorant is not so much a shame, as being unwilling to
           learn."
           <br><strong>– Benjamin Franklin </strong></i></blockquote>
-      <hr class="container pr-0 pl-0" style="background-color: white;">
+      <hr class="container pr-0 pl-0 colorBackgroundWhite">
     </div>
     <br>
-    <ul class="container" style="list-style-type: none; text-align: center; padding-bottom:200px;">
-      <li style="display: inline-block; padding-left:3vw; padding-right:3vw">
+    <ul class="containe cmUL">
+      <li class="cmLI">
         <h5><a href="https://www.linkedin.com/in/quinn-roemer-892427185" target="_blank" class="noDecoration"><img
               class="imageIcon icon" src="images/linkedIn.png"> www.linkedin.com/in/quinn-roemer</a></h5>
       </li>
-      <li style="display: inline-block; padding-left:3vw; padding-right:3vw">
+      <li class="cmLI">
         <h5><a href="mailto:qroemer.contact@gmail.com" target="_blank" class="noDecoration"><img class="imageIcon icon"
               src="icons/envelope.svg"> qroemer.contact@gmail.com</a></h5>
       </li>
@@ -436,6 +408,9 @@
 
   <!-- Optional JavaScript -->
   <script src="javascript/script.js"></script>
+
+  <!-- Github buttons -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
