@@ -1,1 +1,2 @@
-Code for my portfolio/resume website
+# Personal Website
+Files for my portfolio/resume website.

@@ -1,0 +1,143 @@
+.banner {
+  background-image: url("../images/temp_background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.jumbotron {
+  background: transparent;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.onePadding {
+  padding-top: 1px;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block
+}
+
+.icon {
+  margin-bottom: 5px;
+}
+
+.list-group-item {
+  border: none;
+}
+
+.creamBackground {
+  background-color: rgb(249, 249, 243);
+}
+
+.card {
+  border: none;
+}
+
+.border {
+  z-index: 1;
+  border-radius: 5px;
+  border-width: thick;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease-in-out;
+}
+
+.border:hover {
+  position: relative;
+  z-index: 2;
+  transform: scale(1.05, 1.05);
+}
+
+.listHighlight {
+  transition: all 0.15s ease-in-out;
+}
+
+.noDecoration, .noDecoration:hover, .noDecoration:visited, .noDecoration:link, .noDecoration:active, .noDecration:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+.backgroundOnHover {
+  transition: all 0.15s ease-in-out;
+}
+
+.backgroundOnHover:hover {
+  background-color: rgba(37, 112, 170, .8);
+  border-radius: 5px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .nav-link.active:hover, .nav-pills .nav-link.active:focus {
+  background-color: rgba(37, 112, 170);
+}
+
+.logo {
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.max90 {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.colorCream {
+  background-color: rgb(249, 249, 243);
+}
+
+.bPad50 {
+  padding-bottom: 50px;
+}
+
+.tPad50 {
+  padding-top: 50px;
+}
+
+.jumboThirdLine {
+  position: relative;
+  bottom: 15px;
+}
+
+.imageIcon {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.navbar-collapse {
+  text-align: center;
+}
+
+.colorBlue {
+  color: rgb(37, 112, 170);
+}
+
+.colorBackgroundWhite {
+  background-color: white;
+}
+
+.colorLink {
+  color: inherit;
+  text-decoration: underline;
+  padding-left: 2px;
+}
+
+.cMBox {
+  box-sizing: border-box;
+  border: 1px solid rgb(52, 60, 68);
+}
+
+.cmUL {
+  list-style-type: none;
+  text-align: center;
+  padding-bottom: 200px;
+}
+
+.cmLI {
+  display: inline-block;
+  padding-left: 3vw;
+  padding-right: 3vw;
+}

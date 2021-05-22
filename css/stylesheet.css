@@ -1,135 +1,148 @@
-.jumbotron {
-  background: transparent;
-  padding-top: 1px;
-  padding-bottom: 1px;
+:root {
+    --blue: #66AEE4;
+    --white: #BBCCCE;
+    --background: #101112;
+    --link: #196ff0;
+    --faded: #B2AEA6;
 }
 
-.onePadding {
-  padding-top: 1px;
+.banner {
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("../images/background.jpg");
+    height: 100vh;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.font350 {
+    font-size: 350%;
+}
+
+.font200 {
+    font-size: 200%;
+}
+
+.headerFooter {
+    position: relative;
+    bottom: 25px;
+}
+
+.socialMediaIcon {
+    color: var(--white);
+    transition: all 0.15s ease-in-out;
+}
+
+.socialMediaIcon:hover {
+    transform: scale(1.4, 1.4);
+    color: var(--blue);
+}
+
+.reduceSize {
+    font-size: 80%;
+}
+
+.highlightBlue {
+    color: var(--blue);
+}
+
+.faded {
+    opacity: 90%;
+}
+
+.gray {
+    opacity: 90%;
+    color: var(--faded)
 }
 
 .center {
-  margin-left: auto;
-  margin-right: auto;
-  display: block
+    margin-left: auto;
+    margin-right: auto;
+    display: block
 }
 
-.icon {
-  margin-bottom: 5px;
+.align-vertical {
+    display: flex;
+    align-items: center;
 }
 
 .list-group-item {
-  border: none;
+    border: none;
+    background-color: inherit;
+    color: var(--white);
 }
 
-.creamBackground {
-  background-color: rgb(249, 249, 243);
-}
-
-.card {
-  border: none;
-}
-
-.border {
-  z-index: 1;
-  border-radius: 5px;
-  border-width: thick;
-  background-color: #fff;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-  transition: all 0.2s ease-in-out;
-}
-
-.border:hover {
-  position: relative;
-  z-index: 2;
-  transform: scale(1.05, 1.05);
-}
-
-.listHighlight {
-  transition: all 0.15s ease-in-out;
-}
-
-.noDecoration, .noDecoration:hover, .noDecoration:visited, .noDecoration:link, .noDecoration:active, .noDecration:focus {
-  text-decoration: none;
-  color: inherit;
-}
-
-.backgroundOnHover {
-  transition: all 0.15s ease-in-out;
-}
-
-.backgroundOnHover:hover {
-  background-color: rgba(37, 112, 170, .8);
-  border-radius: 5px;
-}
-
-.nav-pills .nav-link.active, .nav-pills .nav-link.active:hover, .nav-pills .nav-link.active:focus {
-  background-color: rgba(37, 112, 170);
-}
-
-.logo {
-  border-radius: 50%;
-  margin-right: 5px;
-}
-
-.max90 {
-  max-width: 90%;
-  max-height: 90%;
-}
-
-.colorCream {
-  background-color: rgb(249, 249, 243);
+.tPadLeft10 {
+    padding-left: 10px;
 }
 
 .bPad50 {
-  padding-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 .tPad50 {
-  padding-top: 50px;
+    padding-top: 50px;
 }
 
 .jumboThirdLine {
-  position: relative;
-  bottom: 15px;
+    position: relative;
+    bottom: 15px;
 }
 
-.imageIcon {
-  width: 1.5em;
-  height: 1.5em;
+.listHighlight {
+    transition: all 0.15s ease-in-out;
 }
 
-.navbar-collapse {
-  text-align: center;
+.backgroundOnHover {
+    transition: all 0.15s ease-in-out;
 }
 
-.colorBlue {
-  color: rgb(37, 112, 170);
+.project-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
 }
 
-.colorBackgroundWhite {
-  background-color: white;
+.profile-img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
 }
 
-.colorLink {
-  color: inherit;
-  text-decoration: underline;
-  padding-left: 2px;
+.backgroundOnHover:hover {
+    background-color: rgb(48, 46, 46);
+    border-radius: 5px;
 }
 
-.cMBox {
-  box-sizing: border-box;
-  border: 1px solid rgb(52, 60, 68);
+.link {
+    color: var(--link);
+    text-decoration: none;
+    transition: all 0.15s ease-in-out;
 }
 
-.cmUL {
-  list-style-type: none;
-  text-align: center;
-  padding-bottom: 200px;
+.link:hover {
+    color: var(--link);
+    text-decoration: underline;
 }
 
-.cmLI {
-  display: inline-block;
-  padding-left: 3vw;
-  padding-right: 3vw;
+body {
+    background-color: var(--background);
+    padding-bottom: 100px;
+    color: var(--white);
+    font-family: 'Open Sans', sans-serif;
+}
+
+head {
+    font-family: 'Open Sans', sans-serif;
+}
+
+section {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+p {
+    opacity: 90%;
 }

@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/old_stylesheet.css">
+
+  <title>Quinn Roemer - Interactive Resume</title>
+  <link rel="icon" href="icons/favicon.ico">
+</head>
+
+<body class="" onload="getPgRdy()" data-spy="scroll" data-target=".navbar">
+
+  <!-- Background: #141616 -->
+  <!-- Blue: #66AEE4 -->
+  <!-- White: #BBCCCE -->
+
+  <!-- ============================== Start Header ============================== -->
+
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+    <div class="container">
+      <a class="" href="#"><img src="images/mugshot.jpg" width="40" height="40" class="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav nav-pills">
+          <a class="nav-item nav-link text-white" href="#education">Education</a>
+          <a class="nav-item nav-link text-white" href="#experience">Experience</a>
+          <a class="nav-item nav-link text-white" href="#skills">Skills</a>
+          <a class="nav-item nav-link text-white" href="#projects">Projects</a>
+          <a class="nav-item nav-link text-white" href="#contactMe">Contact Me</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <br>
+  <br>
+  <br>
+
+  <!-- ============================== Start Profile ============================== -->
+
+  <div class="jumbotron container">
+    <div class="row">
+      <div class="col-lg-4 text-center">
+        <h2 class="colorBlue">About Me</h2>
+        <p class="text-center"> I am a Computer Science student at Sacramento State University pursuing my bachelor's
+          degree. Eager to learn and develop my skills in programming/technology, I look forward to new and challenging
+          experiences.</p>
+      </div>
+      <div class="col-lg-4"><img src="images/mugshot.jpg" class="rounded-circle img-fluid center max90">
+      </div>
+      <div class="col-lg-4 text-center">
+        <h2 class="colorBlue">Details</h2>
+        <div>
+          <li class="list-group-item">
+            <h5 class="d-flex justify-content-between"><strong>Name:</strong><span class="">Quinn Roemer</span></h5>
+          </li>
+          <br>
+          <li class="list-group-item">
+            <h5 class="d-flex justify-content-between"><strong>Age:</strong>
+              <div id="age"></div>
+            </h5>
+          </li>
+          <br>
+          <li class="list-group-item">
+            <h5 class="d-flex justify-content-between"><strong>Location:</strong>
+              <div><img class="icon" src="icons/geo-alt.svg"><a class="colorLink"
+                  href="https://www.google.com/maps/place/Redding,+CA" target="_blank">Redding, CA</a>
+            </h5>
+        </div>
+        </li>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+
+  <!-- ============================== Start Education ============================== -->
+
+  <div class="colorCream bPad50">
+    <h1 class="text-center colorBlue tPad50" id="education">Education</h1>
+    <hr class="container pr-0 pl-0">
+    <br>
+
+    <div class="jumbotron container">
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Sacramento State University</h4>
+          <p>August 2019 - Present</p>
+          <p class="jumboThirdLine">GPA: 3.95</p>
+        </div>
+        <div class="col-md-8">
+          <h4>Description</h4>
+          <p>
+            Currently pursuing my bachelor's in Computer Science. I am on track to graduate after the Spring 2021
+            semester.</p>
+          <img class="icon" src="icons/box-arrow-up-right.svg">
+          <a class="colorLink" href="https://www.csus.edu/" target="_blank">Sacramento State University</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="jumbotron container">
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Folsom Lake College</h4>
+          <p>January 2016 - May 2019</p>
+          <p class="jumboThirdLine">GPA: 3.93</p>
+        </div>
+        <div class="col-md-8">
+          <h4>Description</h4>
+          <p>
+            I graduated Folsom Lake College (FLC) in Spring 2019 with two associate degrees. One in Computer Science and
+            the other in Math/Science.</p>
+          <img class="icon" src="icons/box-arrow-up-right.svg">
+          <a class="colorLink" href="https://flc.losrios.edu/" target="_blank">Folsom Lake College</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================== Start Experience ============================== -->
+
+  <h1 class="text-center colorBlue tPad50" id="experience">Experience</h1>
+  <hr class="container pr-0 pl-0">
+  <br>
+
+  <div class="jumbotron container">
+    <div class="row">
+      <div class="col-md-4">
+        <h4>Sacramento State University</h4>
+        <p>February 2021 - Present</p>
+        <p class="jumboThirdLine">Computer Science Grader</p>
+      </div>
+      <div class="col-md-8">
+        <h4>Description</h4>
+        <p>
+          Currently responsible for grading student’s programming assignments for CSC 139
+          (Operating Systems) for Dr. Ghassan Shobaki
+        </p>
+        <img class="icon" src="icons/box-arrow-up-right.svg">
+        <a class="colorLink" href="https://www.csus.edu/college/engineering-computer-science/computer-science/"
+          target="_blank">Department of Computer Science</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="jumbotron container">
+    <div class="row">
+      <div class="col-md-4">
+        <h4>Sacramento Department of Utilities</h4>
+        <p>June 2019 - July 2020</p>
+        <p class="jumboThirdLine">Student Intern</p>
+      </div>
+      <div class="col-md-8">
+        <h4>Description</h4>
+        <p>
+          At this internship, I was responsible for using, managing, and querying a financial database to produce
+          reports at the directors' request. I actively used SQL and DAX inside of Microsoft Power BI in my daily tasks.
+        </p>
+        <img class="icon" src="icons/box-arrow-up-right.svg">
+        <a class="colorLink" href="https://www.cityofsacramento.org/utilities" target="_blank">Sacramento DOU</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="jumbotron container">
+    <div class="row">
+      <div class="col-md-4">
+        <h4>Rock-N-Water</h4>
+        <p>September 2019 - January 2020</p>
+        <p class="jumboThirdLine">Technical Assistant</p>
+      </div>
+      <div class="col-md-8">
+        <h4>Description</h4>
+        <p>
+          I was brought on to solve various computer technology-related issues. My work involved modifying and
+          maintaining a File Maker Pro database, WordPress website, and various other computer hardware.
+        </p>
+        <img class="icon" src="icons/box-arrow-up-right.svg">
+        <a class="colorLink" href="https://www.rocknwater.com/" target="_blank">Rock-N-Water</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="jumbotron container">
+    <div class="row">
+      <div class="col-md-4">
+        <h4>Folsom Lake College</h4>
+        <p>January 2019 - May 2019</p>
+        <p class="jumboThirdLine">Tutor</p>
+      </div>
+      <div class="col-md-8">
+        <h4>Description</h4>
+        <p>
+          Worked as a Computer Science and Math tutor at FLC. I was responsible for assisting other students in
+          understanding essential topics in their programming courses. In addition, I assisted in tutoring
+          Algebra/Calculus students.
+        </p>
+        <img class="icon" src="icons/box-arrow-up-right.svg">
+        <a class="colorLink" href="https://flc.losrios.edu/student-resources/tutoring" target="_blank">Folsom Lake
+          Tutoring</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================== Start Skills ============================== -->
+
+  <div class="colorCream bPad50">
+    <h1 class="text-center colorBlue tPad50" id="skills">Skills</h1>
+    <hr class="container pr-0 pl-0">
+    <br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <ul class="list-group">
+            <a data-toggle="tooltip" data-placement="right" title="Proficient">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center backgroundOnHover creamBackground"
+                onmouseover='enlargeStars("starOne")' onmouseout='shrinkStars("starOne")'>C/C++
+                <span>
+                  <div id="starOne" class="listHighlight">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                  </div>
+                </span>
+              </li>
+            </a>
+            <a data-toggle="tooltip" data-placement="right" title="Proficient">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center backgroundOnHover creamBackground"
+                onmouseover='enlargeStars("starTwo")' onmouseout='shrinkStars("starTwo")'>Java
+                <span>
+                  <div id="starTwo" class="listHighlight">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-half.svg">
+                  </div>
+                </span>
+              </li>
+            </a>
+            <a data-toggle="tooltip" data-placement="right" title="Intermediate">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center backgroundOnHover creamBackground"
+                onmouseover='enlargeStars("starThree")' onmouseout='shrinkStars("starThree")'>Python
+                <span>
+                  <div id="starThree" class="listHighlight">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star.svg">
+                    <img class="icon" src="icons/star.svg">
+                  </div>
+                </span>
+              </li>
+            </a>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <ul class="list-group">
+            <a data-toggle="tooltip" data-placement="right" title="Intermediate">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center backgroundOnHover creamBackground"
+                onmouseover='enlargeStars("starFour")' onmouseout='shrinkStars("starFour")'>SQL
+                <span>
+                  <div id="starFour" class="listHighlight">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star.svg">
+                    <img class="icon" src="icons/star.svg">
+                  </div>
+                </span>
+              </li>
+            </a>
+            <a data-toggle="tooltip" data-placement="right" title="Intermediate">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center backgroundOnHover creamBackground"
+                onmouseover='enlargeStars("starFive")' onmouseout='shrinkStars("starFive")'>PHP
+                <span>
+                  <div id="starFive" class="listHighlight">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star.svg">
+                    <img class="icon" src="icons/star.svg">
+                  </div>
+                </span>
+              </li>
+            </a>
+            <a data-toggle="tooltip" data-placement="right" title="Intermediate">
+              <li
+                class="list-group-item d-flex justify-content-between align-items-center backgroundOnHover creamBackground"
+                onmouseover='enlargeStars("starSix")' onmouseout='shrinkStars("starSix")'>JavaScript
+                <span>
+                  <div id="starSix" class="listHighlight">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star-fill.svg">
+                    <img class="icon" src="icons/star.svg">
+                    <img class="icon" src="icons/star.svg">
+                  </div>
+                </span>
+              </li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================== Start Projects ============================== -->
+
+  <div>
+    <h1 class="text-center colorBlue tPad50" id="projects">Projects</h1>
+    <!-- Place this tag where you want the button to render. -->
+    <center>
+      <a class="github-button" href="https://github.com/Warthog710" target="_blank"
+        data-color-scheme="no-preference: light; light: light; dark: light;" data-size="large"
+        aria-label="Use this template ntkme/github-buttons on GitHub">My GitHub</a>
+    </center>
+    <hr class="container pr-0 pl-0">
+  </div>
+  <br>
+
+  <!-- Project rows, each row contains 4 card divs -->
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <ul class="list-group">
+          <a href="https://github.com/Warthog710/CSC165-gravity-guys" class="noDecoration" target="_blank">
+            <div class="card mb-4">
+              <div id="card2" class="border rounded" onmouseover="addShadow(this.id)"
+                onmouseout="removeShadow(this.id)">
+                <img class="card-img-top rounded" src="images/gravityGuys.jpg">
+                <div class="card-body">
+                  <h5 class="card-title">Gravity Guys</h5>
+                  <p class="card-text">3D platformer with multiplayer networking.</p>
+                  <p class="card-text"><small class="text-muted">December 14, 2020</small></p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <ul class="list-group">
+          <a href="https://github.com/Warthog710/pi_tic-tac-toe" class="noDecoration" target="_blank">
+            <div class="card mb-4">
+              <div id="card0" class="border rounded" onmouseover="addShadow(this.id)"
+                onmouseout="removeShadow(this.id)">
+                <img class="card-img-top rounded" src="images/pythonTicTacToe.jpg">
+                <div class="card-body">
+                  <h5 class="card-title">Python Tic-Tac-Toe</h5>
+                  <p class="card-text">Python implementation of Tic-Tac-Toe using Minimax.</p>
+                  <p class="card-text"><small class="text-muted">September 10, 2020</small></p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <ul class="list-group">
+          <a href="https://github.com/Warthog710/Tower-Defense-Game" class="noDecoration" target="_blank">
+            <div class="card mb-4">
+              <div id="card1" class="border rounded" onmouseover="addShadow(this.id)"
+                onmouseout="removeShadow(this.id)">
+                <img class="card-img-top rounded" src="images/towerDefense.jpg">
+                <div class="card-body">
+                  <h5 class="card-title">Tower Defense Game</h5>
+                  <p class="card-text">Android Tower Defense game built for CSC 133.</p>
+                  <p class="card-text"><small class="text-muted">May 12, 2020</small></p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <ul class="list-group">
+          <a href="https://github.com/Warthog710/church-library" class="noDecoration" target="_blank">
+            <div class="card mb-4">
+              <div id="card2" class="border rounded" onmouseover="addShadow(this.id)"
+                onmouseout="removeShadow(this.id)">
+                <img class="card-img-top rounded" src="images/churchLibrary.jpg">
+                <div class="card-body">
+                  <h5 class="card-title">Library Front-end</h5>
+                  <p class="card-text">Library front-end built for a SQL Database.</p>
+                  <p class="card-text"><small class="text-muted">October 22, 2018</small></p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- New row of projects -->
+
+  <!-- ============================== Start Contact Me ============================== -->
+
+  <div class="bg-dark text-white tPad50 cMBox">
+    <div>
+      <h1 class="text-center" id="contactMe">Contact Me</h1>
+      <hr class="container pr-0 pl-0 colorBackgroundWhite">
+    </div>
+    <br>
+    <ul class="containe cmUL">
+      <li class="cmLI">
+        <h5><a href="https://www.linkedin.com/in/quinn-roemer-892427185" target="_blank" class="noDecoration"><img
+              class="imageIcon icon" src="images/linkedIn.png"> www.linkedin.com/in/quinn-roemer</a></h5>
+      </li>
+      <li class="cmLI">
+        <h5><a href="mailto:qroemer.contact@gmail.com" target="_blank" class="noDecoration"><img class="imageIcon icon"
+              src="icons/envelope.svg"> qroemer.contact@gmail.com</a></h5>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <script src="javascript/script.js"></script>
+
+  <!-- Github buttons -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
