@@ -1,7 +1,7 @@
 function getPgRdy() {
-    birthday = new Date(1998, 7, 10);
-    var ageDifMs = Date.now() - birthday.getTime();
-    var ageDate = new Date(ageDifMs);
+    var birthday = new Date('1998-7-10')
+    var diff = Date.now() - birthday.getTime()
+    var ageDate = new Date(diff);
     document.getElementById("age").innerHTML = Math.abs(ageDate.getUTCFullYear() - 1970);
 
     //Enable Bootstrap Tooltips
