@@ -127,6 +127,19 @@
     text-decoration: underline;
 }
 
+.skills-icon 
+{
+    width: 30px;
+    height: 30px;
+    padding-bottom: 5px;
+    transition: all 0.15s ease-in-out;
+}
+
+.skills-icon:hover
+{
+    transform: scale(1.4, 1.4); 
+}
+
 body {
     background-color: var(--background);
     padding-bottom: 100px;
